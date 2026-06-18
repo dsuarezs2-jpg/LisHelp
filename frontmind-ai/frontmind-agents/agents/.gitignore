@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+frontmind-agents/venv/
+frontmind-agents/__pycache__/
+frontmind-agents/**/__pycache__/
+frontmind-agents/captures/
+frontmind-agents/uploads/
+frontmind-agents/extracted_projects/
+frontmind-agents/*.zip
+
+.env
+.vscode/

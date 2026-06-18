@@ -1,0 +1,167 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  background: #ffffff;
+}
+
+.input-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  gap: 28px;
+  padding: 42px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.page-header p {
+  color: #6b7280;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.input-card {
+  margin-top: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabs button {
+  background: #ffffff;
+  border: none;
+  padding: 18px;
+  font-weight: bold;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  color: #111827;
+  border-bottom: 3px solid #5885e6;
+}
+
+.tab-content {
+  padding: 34px;
+}
+
+.tab-content h2 {
+  margin: 0 0 10px;
+}
+
+.tab-content p {
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+.tab-content label {
+  display: block;
+  margin: 28px 0 10px;
+  font-weight: bold;
+}
+
+.tab-content input,
+.tab-content textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.tab-content textarea {
+  min-height: 230px;
+  font-family: Consolas, monospace;
+  resize: vertical;
+}
+
+.options {
+  margin: 0 34px 28px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.options div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-btn {
+  display: block;
+  margin: 0 auto 34px;
+  width: 280px;
+  background: #5885e6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.alert {
+  margin: 20px 34px 0;
+  border: 1px solid #111827;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.summary-panel {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+
+.summary-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+  background: #ffffff;
+}
+
+.summary-card h3 {
+  margin: 0 0 14px;
+}
+
+.summary-card span {
+  display: inline-block;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-weight: bold;
+}
+
+.summary-card p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .input-main {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+}

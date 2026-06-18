@@ -1,0 +1,247 @@
+.preview-page {
+  height: 100vh;
+  display: flex;
+  background: #070b1a;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.preview-main {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 34px;
+}
+
+.preview-header h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.preview-header p {
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.preview-card-full {
+  margin-top: 28px;
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 24px;
+  max-width: 1050px;
+}
+
+.preview-toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 22px;
+}
+
+.preview-toolbar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  outline: none;
+}
+
+.preview-toolbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.website-preview {
+  background: #f8fafc;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 24px;
+  min-height: 330px;
+}
+
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 13px;
+}
+
+.site-navbar button,
+.site-hero button {
+  background: #6d28d9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.site-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.site-hero h2 {
+  font-size: 36px;
+  line-height: 1.1;
+  margin: 0 0 18px;
+}
+
+.site-hero p {
+  color: #475569;
+  line-height: 1.5;
+}
+
+.light-btn {
+  background: white !important;
+  color: #6d28d9 !important;
+  border: 1px solid #ddd !important;
+  margin-left: 12px;
+}
+
+.mock-panel {
+  background: #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+  min-height: 190px;
+  display: grid;
+  gap: 12px;
+}
+
+.mock-panel div {
+  background: white;
+  border-radius: 12px;
+}
+
+.preview-note {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 16px;
+}
+
+.split-preview {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+  gap: 22px;
+}
+
+.code-panel,
+.render-panel {
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 22px;
+  min-width: 0;
+}
+
+.code-panel h3,
+.render-panel h3 {
+  margin-top: 0;
+}
+
+.code-panel pre {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 18px;
+  min-height: 420px;
+  max-height: 520px;
+  overflow: auto;
+  color: #c4b5fd;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.website-preview.mini {
+  min-height: 420px;
+}
+
+.website-preview.mini .site-hero h2 {
+  font-size: 28px;
+}
+
+.url-preview-frame,
+.code-preview-frame {
+  width: 100%;
+  min-height: 520px;
+  border: 0;
+  border-radius: 12px;
+  background: white;
+}
+
+.empty-preview {
+  min-height: 260px;
+  border: 1px dashed #334155;
+  border-radius: 14px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: #111827;
+}
+
+.preview-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.preview-actions button {
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  border: none;
+  color: white;
+  padding: 16px 26px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .preview-page {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    flex-direction: column;
+  }
+
+  .preview-main {
+    height: auto;
+    overflow: visible;
+    padding: 22px;
+  }
+
+  .split-preview,
+  .site-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .site-navbar {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .site-navbar nav {
+    flex-wrap: wrap;
+  }
+}
